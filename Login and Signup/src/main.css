@@ -128,3 +128,33 @@ body {
 .form__link:hover {
     text-decoration: underline;
 }
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.login-container {
+    background: url("./assets/login-image-bg.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-image-desktop {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .login-image-desktop {
+        display: block;
+    }
+
+    .login-container {
+        background: none;
+    }
+}
+
+
